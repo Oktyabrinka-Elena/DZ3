@@ -3,30 +3,15 @@
 // 23432 -> да
 // 12821 -> да
 
-// Console.Write("Введите число не более 5 символов: ");
-// string? number = Console.ReadLine();
-
-// void CheckingNumber(string number){
-//   if (number[0]==number[4] || number[1]==number[3])
-//   {
-//     Console.WriteLine($"Число: {number} - палиндром.");
-//   }
-//   else Console.WriteLine($"Число: {number} - не палиндром.");
-// }
-
-// if (number!.Length == 5)
-// {
-//   CheckingNumber(number);
-// }
-// else Console.WriteLine($"Число не пятизначное, повторите ввод");
-
 Console.Write("Введите число из 5 символов: ");
 string number = Console.ReadLine();
 
-if (number[0]==number[4] && number[1]==number[3])
-  {
-    Console.WriteLine($"Число: {number} - палиндром.");
-  }
-else Console.WriteLine($"Число: {number} - не палиндром.");
-
 if (number.Length != 5)  Console.WriteLine($"Число не пятизначное, повторите ввод");
+else 
+{
+    if (number[0]==number[4] && number[1]==number[3]) Console.WriteLine($"Число: {number} - палиндром.");
+    else Console.WriteLine($"Число: {number} - не палиндром.");
+}
+
+
+
